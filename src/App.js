@@ -1,7 +1,7 @@
 import React from 'react';  
 import Footer from "./Footer.js";
 import Header from "./Header.js";
-import Note from "./mainFile.js";
+import Food from "./mainFile.js";
 import Fashion from "./Fashion.js"
 import './App.css';
 
@@ -23,7 +23,7 @@ function App() {
           Learn React
         </a> */}
         <Header />
-        <Note />
+        <Food />
         <Fashion />
         {/* <Footer /> */}
      
