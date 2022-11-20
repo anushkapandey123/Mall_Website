@@ -9,6 +9,7 @@ html {
 body {
   
   padding: 0 16px;
+  background-color: black;
 }
 
 
@@ -66,16 +67,27 @@ footer p {
   font-size: 1.2rem;
 }
 
+.head-color {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1rem;
+}
+
 #food {
   text-align: center;
   background-color: rgb(255, 0, 76);
   padding: 100px;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvcGuwt3TBVRdCKEpavFyTj-I1jzLviLaTMg&usqp=CAU"); */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.phoenixmarketcity.com/images/dine-homebanner.jpg");
 }
 
 .card-margin {
   padding-top: 20%;
 }
+
+
 
 #fashion {
   background-color: #fff;
@@ -89,6 +101,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
