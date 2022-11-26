@@ -6,11 +6,7 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
-body {
-  
-  padding: 0 16px;
-  background-color: black;
-}
+
 
 
 footer {
@@ -45,11 +41,11 @@ footer p {
 } */
 
 .font-color {
-  color:#fff;
+  color:rgb(12, 1, 1);
 }
 
 .container-fluid {
-  padding: 3% 15% 3% 15%;
+  padding: 4% 15% 3% 15%;
   text-align: center;
 }
 
@@ -69,18 +65,28 @@ footer p {
 
 .head-color {
   color: #fff;
+  
   text-align: center;
   text-shadow: 1rem;
+  margin-top: 2rem;
 }
 
 #food {
   text-align: center;
-  background-color: rgb(255, 0, 76);
+  background-color: rgb(29, 84, 90);
   padding: 100px;
+  margin-top: 2rem;
   position: relative;
   background-size: cover;
   background-position: center;
   background-image: url("https://www.phoenixmarketcity.com/images/dine-homebanner.jpg");
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ 
 }
 
 .card-margin {
@@ -90,9 +96,58 @@ footer p {
 
 
 #fashion {
-  background-color: #fff;
+  padding: auto;
+  background-color: #FF8787;
+  padding-bottom: 1rem;
+  
 }
 
+
+
+
+/* --------------------------------------------- */
+.flip-card {
+  background-color: transparent;
+  
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* .flip-card-front {
+  background-color: #bbb;
+  color: #fff;
+} */
+
+.flip-card-back {
+  
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.btn-style {
+  margin-left: 50%;
+}
 
 body {
   margin: 0;
@@ -101,7 +156,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(39, 35, 35);
 }
 
 code {
