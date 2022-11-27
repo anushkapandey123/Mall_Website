@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link, NavLink} from 'react-router-dom'
 
 function Header() {
   return (
@@ -14,16 +14,16 @@ function Header() {
         <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
       
       <ul class = "navbar-nav ms-auto">
-          <li class = "nav-item">
-              <a class = "nav-link" href="#">Events</a>
-          </li>
-
+        
           <li class = "nav-item">
               <a class = "nav-link" href="#food">Dine</a>
           </li>
 
           <li class = "nav-item">
               <a class = "nav-link" href="#fashion">Fashion</a>
+          </li>
+          <li class = "nav-item">
+              <a class = "nav-link" href="/EventReg">Events</a>
           </li>
           </ul>
       </div>
