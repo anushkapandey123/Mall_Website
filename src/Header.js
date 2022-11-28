@@ -1,12 +1,13 @@
 import React from "react";
-
+import {Link, NavLink} from 'react-router-dom'
 
 function Header() {
   return (
     <div>
     <section>
      <nav class = "navbar navbar-expand-lg navbar-dark bg-secondary">
-      <a class = "navbar-brand" href="">Phoenix</a>
+      <h1 class="display-4 font-weight-bold">Phoenix</h1>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,12 +15,16 @@ function Header() {
         <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
       
       <ul class = "navbar-nav ms-auto">
+        
           <li class = "nav-item">
-              <a class = "nav-link" href="#">Events</a>
+              <a class = "nav-link" href="#food">Dine</a>
           </li>
 
           <li class = "nav-item">
-              <a class = "nav-link" href="#food">Dine</a>
+              <a class = "nav-link" href="#fashion">Fashion</a>
+          </li>
+          <li class = "nav-item">
+              <a class = "nav-link" href="/EventReg">Events</a>
           </li>
           </ul>
       </div>
