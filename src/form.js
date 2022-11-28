@@ -19,6 +19,11 @@ class Event extends React.Component
      }
      handleClick = (event)=>{
         event.preventDefault();
+        axios.post("http://localhost:9000/form", this.state)
+        .then(res => {
+            console.log(res.data)
+            
+    })
     }
     constructor(props)
     {
@@ -56,7 +61,9 @@ class Event extends React.Component
             <br/><br/>
                Full Name<br/><input type="text"  name= "name" size = "30" style = {{height:"40px",fontSize:"30px"}}></input>
             <br/><br/>
-
+                Number of Tickets<br/><input type="number"  name= "quantity" size = "30" style = {{height:"40px",fontSize:"30px"}}></input>
+            <br/><br/>
+            
             
             <button style = {{height:'50px',width:"300px",fontSize:"25px"}} onClick = {this.handleClick}>Buy tickets</button>
             </form>
