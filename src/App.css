@@ -36,7 +36,12 @@
     transform: rotate(360deg);
   }
 } */
-
+#hp  {
+  float: right;    
+  }
+#right{    
+  text-align: right;  
+  }
 #color {
   background-color: aquamarine;
 }
@@ -47,8 +52,7 @@ body {background-color: rgb(255, 255, 255);}
   padding-left: 10px;
   display: grid;
   width: 78%;
-  height: 250px;
-
+  height: 300px;
   margin: auto;
 }
 
@@ -61,6 +65,13 @@ body {background-color: rgb(255, 255, 255);}
   display: inline-block;
   font-size: 16px;
 }
+.center {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: medium;
+}
+
 /* li {
   font-size: large;
   
