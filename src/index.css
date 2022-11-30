@@ -10,7 +10,7 @@ html {
 
 
 footer {
-  position: absolute;
+  position: relative;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -103,6 +103,13 @@ footer p {
 }
 
 #movies {
+  text-align: center;
+  background-color: rgb(29, 84, 90);
+  padding: 0px;
+  margin-top: 0.5rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   background-image: url("https://cdn4.vectorstock.com/i/1000x1000/18/78/now-showing-theater-movie-banner-sign-vector-3631878.jpg");
 }
 
@@ -110,7 +117,6 @@ footer p {
 /* --------------------------------------------- */
 .flip-card {
   background-color: transparent;
-  
   perspective: 1000px;
 }
 

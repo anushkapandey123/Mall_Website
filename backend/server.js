@@ -1,9 +1,29 @@
 const express = require('express')
-// //create express instance
-// const app = express();
 var cors = require('cors')
-// app.use(express.json())
 const app = express()
+
+const mongoose = require("mongoose")
+const port = 8080;
+
+const conn_str = "mongodb+srv://mall_user:user%40123@cluster0.fd7nc0w.mongodb.net/?retryWrites=true&w=majority";
+
+mongoose.connect(
+    conn_str,
+    { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true 
+    },(err) => {
+    if (err) {
+    console.log("error in connection"+err);
+    } else {
+    console.log("mongodb is connected");
+    }}
+);
+
+app.listen(port, () => {
+    console.log("starting the server");
+    }); 
+
 app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())

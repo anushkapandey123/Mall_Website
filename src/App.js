@@ -5,6 +5,7 @@ import Services from './MallServices.js';
 import Food from "./mainFile.js";
 import Fashion from "./Fashion.js"
 import './App.css';
+import Movies from "./Movies.js"
 function Home() {
   return (
     <div >
@@ -12,7 +13,9 @@ function Home() {
         <Services />
         <Food />
         <Fashion />
-        </div>
+        <Movies />
+        <Footer/>
+    </div>
     
   );
 }
